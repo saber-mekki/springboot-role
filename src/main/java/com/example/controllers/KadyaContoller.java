@@ -29,6 +29,12 @@ public class KadyaContoller {
 	private ServiceKadya serviceKadya;
 	
 	
+	@GetMapping("/test")	  
+	public String getTest(){
+		//return serviceKadya.getall();
+		return "hello";
+	}
+	
 	@GetMapping("/all")	  
 	public List<kadya> getall(){
 		return serviceKadya.getall();
