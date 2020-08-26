@@ -32,7 +32,7 @@ public class KadyaContoller {
 	@GetMapping("/test")	  
 	public String getTest(){
 		//return serviceKadya.getall();
-		return "hello world"; 
+		return "hello world";
 	}
 	
 	@GetMapping("/all")	  
