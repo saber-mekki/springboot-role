@@ -29,13 +29,19 @@ public class KadyaContoller {
 	private ServiceKadya serviceKadya;
 	
 	
+	@GetMapping("/test")	  
+	public String getTest(){
+		//return serviceKadya.getall();
+		return "hello world"; 
+	}
+	
 	@GetMapping("/all")	  
 	public List<kadya> getall(){
 		return serviceKadya.getall();
 	}
 	@PostMapping("/save")
 	public void save(@RequestBody kadya kadya){
-		serviceKadya.register(kadya);
+		serviceKadya.register(kadya); 
 		 
 	}
 
