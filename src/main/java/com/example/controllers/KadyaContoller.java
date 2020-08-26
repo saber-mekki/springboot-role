@@ -41,7 +41,7 @@ public class KadyaContoller {
 	}
 	@PostMapping("/save")
 	public void save(@RequestBody kadya kadya){
-		serviceKadya.register(kadya);
+		serviceKadya.register(kadya); 
 		 
 	}
 
